@@ -9,9 +9,12 @@ import kotlinx.android.synthetic.main.activity_profile.*
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        bottomNavigationView.background = null
+        bottomNavigationView.menu.getItem(2).isEnabled = false
 
         auth = FirebaseAuth.getInstance()
         btnLogout.setOnClickListener(){
