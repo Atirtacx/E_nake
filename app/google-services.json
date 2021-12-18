@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "165650270700",
+    "project_id": "enaktubes",
+    "storage_bucket": "enaktubes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165650270700:android:be5666fe7c1448721cd8c9",
+        "android_client_info": {
+          "package_name": "com.example.enaktubes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165650270700-v4e6736insq4dgkdd0t8klitcslj7qfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASizFMbm5tk2Ohh_PirtXA9Spef2D0YHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165650270700-v4e6736insq4dgkdd0t8klitcslj7qfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
