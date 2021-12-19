@@ -1,27 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".ProfileFragment">
+    android:gravity="center">
 
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_outline_person_24"
-        app:tint="@color/purple_500" />
-
+        android:tint="@color/white"
+        android:src="@drawable/ic_baseline_person_24"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="#c77b00"
+        android:textColor="@color/white"
         android:textAlignment="center"
-        android:text="Profile Fragment" />
+        android:text="Notification Fragment" />
 
 </LinearLayout>
