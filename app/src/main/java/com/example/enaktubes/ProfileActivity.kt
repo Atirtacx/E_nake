@@ -3,6 +3,9 @@ package com.example.enaktubes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_profile.*
 
@@ -15,6 +18,8 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
         bottomNavigationView.background = null
         bottomNavigationView.menu.getItem(2).isEnabled = false
+
+
 
         auth = FirebaseAuth.getInstance()
         btnLogout.setOnClickListener(){
