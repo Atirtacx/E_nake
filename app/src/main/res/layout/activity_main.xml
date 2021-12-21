@@ -21,8 +21,8 @@
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_countTextColor="#000"
         app:mbn_defaultIconColor="#909090"
-        app:mbn_rippleColor="@color/white"
-        app:mbn_selectedIconColor="@color/white"
+        app:mbn_rippleColor="@color/black"
+        app:mbn_selectedIconColor="@color/black"
         app:mbn_shadowColor="#5000" />
 
 </RelativeLayout>

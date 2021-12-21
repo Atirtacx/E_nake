@@ -2,11 +2,10 @@ package com.example.enaktubes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.codingwithme.meowbottomnavigationbar.*
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
-import com.example.enaktubes.R
+import com.example.enaktubes.addInformation.AddFragment
+import com.example.enaktubes.addInformation.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.codingwithme.meowbottomnavigationbar
+package com.example.enaktubes.addInformation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.enaktubes.R
 
-class AddFragment : Fragment() {
+class HomeFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,13 +15,13 @@ class AddFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_add, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            AddFragment().apply {
+            HomeFragment().apply {
                 arguments = Bundle().apply {}
             }
     }

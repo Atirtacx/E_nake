@@ -2,21 +2,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:tint="@color/white"
-        android:src="@drawable/ic_outline_home_24"/>
     <TextView
+        android:id="@+id/enake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Warung Post"
         android:textAlignment="center"
-        android:text="Notification Fragment" />
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/myDataLoaderProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:indeterminateBehavior="cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 
 </LinearLayout>

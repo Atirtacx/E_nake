@@ -1,22 +1,115 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="horizontal" >
 
+    <EditText
+        android:id="@+id/inputCaption"
+        android:layout_width="366dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_kotak"
+        android:drawableLeft="@drawable/ic_baseline_closed_caption_24"
+        android:ems="10"
+        android:hint="Caption"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:tint="@color/white"
-        android:src="@drawable/ic_outline_add_24"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:text="Notification Fragment" />
+        android:id="@+id/imageView9"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/location" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/inputlocation"
+        android:layout_width="360dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/input_kotak"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+        android:ems="10"
+        android:hint="Location"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputlocation"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="107dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputlocation"
+        app:srcCompat="@drawable/captions" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputlocation"
+        app:layout_constraintEnd_toEndOf="@+id/inputlocation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputlocation"
+        app:srcCompat="@drawable/pin" />
+
+    <Button
+        android:id="@+id/btn_browse"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#3A3535"
+        android:text="BROWSE FILE"
+        app:layout_constraintEnd_toEndOf="@+id/inputCaption"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/inputCaption"
+        app:layout_constraintTop_toBottomOf="@+id/inputCaption" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="133dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#534B4B"
+        android:text="UPLOAD"
+        app:layout_constraintEnd_toEndOf="@+id/btn_browse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_browse"
+        app:layout_constraintTop_toBottomOf="@+id/btn_browse" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
